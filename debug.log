@@ -1,0 +1,49 @@
+2026-02-17T12:23:32.951Z [console][log] [Fast Refresh] done in 169ms
+2026-02-17T12:23:47.104Z [console][log] [Fast Refresh] rebuilding
+2026-02-17T12:23:47.132Z [console][log] [Fast Refresh] done in 219ms
+2026-02-17T12:23:58.369Z [console][log] [Fast Refresh] rebuilding
+2026-02-17T12:23:58.384Z [console][log] [Fast Refresh] done in 222ms
+2026-02-25T15:57:32.183Z [console][error] Image with src "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/68ea0bb2-589b-4a71-9c75-5bebfc51b135/image-1771330921477.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+2026-02-25T15:57:38.509Z [console][error] Image with src "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/image-1771291844745.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+2026-02-25T15:57:39.475Z [console][error] Image with src "https://images.unsplash.com/photo-1595867818082-083862f3d630?q=80&w=2000&auto=format&fit=crop" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+2026-02-25T15:57:45.410Z [console][error] Image with src "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/68ea0bb2-589b-4a71-9c75-5bebfc51b135/image-1771356199779.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+2026-02-25T15:57:45.426Z [console][error] Image with src "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?q=80&w=800&auto=format&fit=crop" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+2026-02-25T15:57:45.460Z [console][error] Image with src "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=800&auto=format&fit=crop" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+2026-02-26T00:17:55.486Z [console][log] [Fast Refresh] done in 503ms
+2026-02-26T00:17:55.567Z [console][warn] Image with src "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?q=80&w=800&auto=format&fit=crop" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+2026-02-26T00:17:55.578Z [console][warn] Image with src "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=800&auto=format&fit=crop" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+2026-02-26T00:18:09.747Z [console][log] [Fast Refresh] rebuilding
+2026-02-26T00:18:10.005Z [console][log] [Fast Refresh] done in 324ms
+2026-02-26T00:18:10.010Z [console][warn] Image with src "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/68ea0bb2-589b-4a71-9c75-5bebfc51b135/2024-FdZ-4975-resized-1772062644742.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+2026-02-26T00:18:10.010Z [console][warn] Image with src "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/68ea0bb2-589b-4a71-9c75-5bebfc51b135/1E9-11-July-2019-Munich-Germany-Image-copyright-Dan-Taylor-dan-dantaylorphotography.com-215-2-1772062642554.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+2026-02-26T00:18:10.010Z [console][warn] Image with src "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/68ea0bb2-589b-4a71-9c75-5bebfc51b135/2019_Blitz_Plus-1772062642114.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+2026-02-26T00:18:10.010Z [console][warn] Image with src "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/68ea0bb2-589b-4a71-9c75-5bebfc51b135/1e9_060723_clubstage2-resized-1772062644012.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+2026-02-26T00:18:10.010Z [console][warn] Image with src "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/68ea0bb2-589b-4a71-9c75-5bebfc51b135/2024_07_02_Festival_der_Zukunft_Freitag_Final_by_Hans-Martin_Kudlinski-136-resized-1772062644064.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+2026-02-26T00:18:10.010Z [console][warn] Image with src "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/68ea0bb2-589b-4a71-9c75-5bebfc51b135/Background-1772062642788.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+2026-02-26T00:18:17.623Z [console][log] [Fast Refresh] rebuilding
+2026-02-26T00:18:17.914Z [console][log] [Fast Refresh] done in 362ms
+2026-02-26T00:18:23.642Z [console][log] [Fast Refresh] rebuilding
+2026-02-26T00:18:23.882Z [console][log] [Fast Refresh] done in 317ms
+2026-02-26T00:29:14.502Z [console][warn] Image with src "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/68ea0bb2-589b-4a71-9c75-5bebfc51b135/FDZ_DAYTWO_MEHRING__AST0807-resized-1772065272137.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+2026-02-26T00:29:14.535Z [console][warn] Image with src "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/68ea0bb2-589b-4a71-9c75-5bebfc51b135/FDZ_DAYONE_ALL__AST9071-resized-1772065271066.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+2026-02-26T00:29:14.552Z [console][warn] Image with src "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/68ea0bb2-589b-4a71-9c75-5bebfc51b135/2025_07_04_FdZ_2025_Tag2_by_Hans-Martin_Kudlinski-158-resized-1772065271456.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+2026-02-26T00:29:14.569Z [console][warn] Image with src "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/68ea0bb2-589b-4a71-9c75-5bebfc51b135/DSCF3385-resized-1772065272443.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+2026-02-26T00:29:14.569Z [console][warn] Image with src "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/image-1771291844745.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+2026-02-26T00:29:14.602Z [console][warn] Image with src "https://images.unsplash.com/photo-1595867818082-083862f3d630?q=80&w=2000&auto=format&fit=crop" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+2026-02-26T00:29:14.602Z [console][warn] Image with src "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/68ea0bb2-589b-4a71-9c75-5bebfc51b135/image-1771356199779.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+2026-02-26T00:29:14.603Z [console][warn] Image with src "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?q=80&w=800&auto=format&fit=crop" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+2026-02-26T00:31:30.035Z [console][log] [Fast Refresh] rebuilding
+2026-02-26T00:31:30.318Z [console][log] [Fast Refresh] done in 330ms
+2026-02-26T01:13:51.733Z [console][warn] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+2026-02-26T01:13:51.875Z [console][log] __ORCHIDS_NAVIGATE__ http://localhost:3000/sponsorships
+2026-02-26T01:15:56.860Z [console][warn] [Fast Refresh] rebuilding
+2026-02-26T01:15:57.110Z [console][warn] [Fast Refresh] done in 290ms
+2026-02-26T01:15:57.474Z [console][warn] [Fast Refresh] rebuilding
+2026-02-26T01:15:57.640Z [console][warn] [Fast Refresh] done in 266ms
+2026-02-26T01:15:57.748Z [console][log] __ORCHIDS_NAVIGATE__ http://localhost:3000/sponsorships
+2026-02-26T01:13:51.875Z [console][debug] __ORCHIDS_NAVIGATE__ http://localhost:3000/sponsorships
+2026-02-26T01:15:56.864Z [console][log] [Fast Refresh] rebuilding
+2026-02-26T01:15:57.114Z [console][log] [Fast Refresh] done in 290ms
+2026-02-26T01:15:57.478Z [console][log] [Fast Refresh] rebuilding
+2026-02-26T01:15:57.643Z [console][log] [Fast Refresh] done in 266ms
+2026-02-26T01:15:57.752Z [console][debug] __ORCHIDS_NAVIGATE__ http://localhost:3000/sponsorships
