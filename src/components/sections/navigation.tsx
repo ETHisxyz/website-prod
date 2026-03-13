@@ -61,8 +61,8 @@ const Navigation = () => {
             <div className="p-8 border-t-8 border-black bg-secondary flex flex-col md:flex-row justify-between items-center gap-8">
               <p className="font-mono text-lg font-black uppercase text-black">ETHis 2026</p>
             <a 
-              href="#" 
-              className="btn-neo bg-white border-black text-black"
+              href="/tickets" 
+                className="btn-neo bg-white border-black text-black"
             >
               Get Tickets
             </a>

@@ -1,5 +1,6 @@
 import React from 'react';
-import { Twitter, Youtube, Linkedin, Globe } from 'lucide-react';
+import { Twitter, Linkedin } from 'lucide-react';
+import { TallyFormButton } from '@/components/tally-form-button';
 
 const Footer = () => {
   return (
@@ -24,7 +25,7 @@ const Footer = () => {
                     <span className="font-black text-4xl tracking-tighter text-black">ETHis</span>
                   </div>
                   <p className="text-black font-bold uppercase leading-tight max-w-[200px] bg-secondary p-4 border-4 border-black neo-shadow">
-                    The real world Ethereum summit.
+                    Ethereum Summit for the Real World.
                   </p>
               </div>
 
@@ -32,7 +33,7 @@ const Footer = () => {
           {/* Nav Columns */}
           <div className="grid grid-cols-2 md:grid-cols-3 col-span-1 md:col-span-3 gap-8">
             <div className="flex flex-col gap-4">
-              <h4 className="font-mono text-[14px] font-black uppercase tracking-widest text-black bg-accent px-2 border-2 border-black inline-block self-start">Events</h4>
+              <h4 className="font-mono text-[14px] font-black uppercase tracking-widest text-black bg-accent px-2 border-2 border-black inline-block self-start">Overview</h4>
                 <ul className="flex flex-col gap-2">
                       <li><a href="#" className="font-bold hover:underline decoration-primary decoration-4 uppercase text-black">Sessions</a></li>
                       <li><a href="#" className="font-bold hover:underline decoration-primary decoration-4 uppercase text-black">Speakers</a></li>
@@ -40,15 +41,14 @@ const Footer = () => {
                       <li><a href="/#sponsors" className="font-bold hover:underline decoration-primary decoration-4 uppercase text-black">Partners</a></li>
                 </ul>
             </div>
-            <div className="flex flex-col gap-4">
-              <h4 className="font-mono text-[14px] font-black uppercase tracking-widest text-black bg-primary px-2 border-2 border-black inline-block self-start">Organization</h4>
-              <ul className="flex flex-col gap-2">
-                <li><a href="#" className="font-bold hover:underline decoration-secondary decoration-4 uppercase text-black">About Us</a></li>
-                  <li><a href="#" className="font-bold hover:underline decoration-secondary decoration-4 uppercase text-black">Volunteer</a></li>
-                <li><a href="#" className="font-bold hover:underline decoration-secondary decoration-4 uppercase text-black">Privacy</a></li>
-                <li><a href="#" className="font-bold hover:underline decoration-secondary decoration-4 uppercase text-black">Terms</a></li>
-              </ul>
-            </div>
+              <div className="flex flex-col gap-4">
+                <h4 className="font-mono text-[14px] font-black uppercase tracking-widest text-black bg-primary px-2 border-2 border-black inline-block self-start">Get Involved</h4>
+                <ul className="flex flex-col gap-2">
+                  <li><TallyFormButton formId="D4VGDN" className="font-bold hover:underline decoration-secondary decoration-4 uppercase text-black text-left">Apply to Speak</TallyFormButton></li>
+                  <li><TallyFormButton formId="jaBZ66" className="font-bold hover:underline decoration-secondary decoration-4 uppercase text-black text-left">Become a Sponsor</TallyFormButton></li>
+                  <li><TallyFormButton formId="A7JrXB" className="font-bold hover:underline decoration-secondary decoration-4 uppercase text-black text-left">Apply to Volunteer</TallyFormButton></li>
+                </ul>
+              </div>
             <div className="flex flex-col gap-4">
               <h4 className="font-mono text-[14px] font-black uppercase tracking-widest text-black bg-secondary px-2 border-2 border-black inline-block self-start">Social</h4>
                 <div className="flex gap-4">
@@ -56,12 +56,9 @@ const Footer = () => {
                     <Twitter size={24} strokeWidth={3} className="text-black" />
                   </a>
 
-                <a href="#" className="p-3 border-4 border-black bg-white neo-shadow hover:translate-x-1 hover:-translate-y-1 hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] transition-all">
-                  <Youtube size={24} strokeWidth={3} className="text-black" />
-                </a>
-                <a href="#" className="p-3 border-4 border-black bg-white neo-shadow hover:translate-x-1 hover:-translate-y-1 hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] transition-all">
-                  <Linkedin size={24} strokeWidth={3} className="text-black" />
-                </a>
+                  <a href="https://www.linkedin.com/company/ethis.xyz/" target="_blank" rel="noopener noreferrer" className="p-3 border-4 border-black bg-white neo-shadow hover:translate-x-1 hover:-translate-y-1 hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] transition-all">
+                    <Linkedin size={24} strokeWidth={3} className="text-black" />
+                  </a>
               </div>
             </div>
           </div>
@@ -71,17 +68,14 @@ const Footer = () => {
           <div className="pt-12 border-t-4 border-black flex flex-col md:flex-row justify-between items-center gap-8">
             <div className="flex items-center gap-6 font-mono text-[12px] font-black uppercase tracking-widest text-black">
               <span className="normal-case">© 2026 ETHis</span>
-              <a href="#" className="hover:underline decoration-accent decoration-2">Privacy Policy</a>
-              <a href="#" className="hover:underline decoration-accent decoration-2">Terms of Service</a>
+              <a href="https://www.1e9.community/datenschutz" target="_blank" rel="noopener noreferrer" className="hover:underline decoration-accent decoration-2">Datenschutz</a>
+              <a href="https://www.1e9.community/agb" target="_blank" rel="noopener noreferrer" className="hover:underline decoration-accent decoration-2">AGB</a>
             </div>
 
           
-            <div className="flex items-center gap-4">
-               <span className="font-mono text-[14px] font-black uppercase text-black">Powered by</span>
-               <div className="bg-white border-4 border-black p-2 neo-shadow">
-                  <Linkedin size={20} strokeWidth={3} className="text-black" />
-               </div>
-            </div>
+            <a href="/tickets#tickets" className="btn-neo px-6 py-3 bg-primary border-4 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all font-mono text-[14px] font-black uppercase tracking-widest text-black">
+              GET TICKETS
+            </a>
         </div>
       </div>
     </footer>

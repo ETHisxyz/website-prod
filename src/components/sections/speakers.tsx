@@ -1,38 +1,74 @@
 import React from 'react';
 import Image from 'next/image';
 import { ArrowUpRight } from 'lucide-react';
+import { TallyFormButton } from '@/components/tally-form-button';
 
 interface Speaker {
   name: string;
   role: string;
   company: string;
   image: string;
+  linkedin?: string;
 }
 
 const speakers: Speaker[] = [
   {
-    name: 'TBA',
-    role: '',
-    company: '',
-    image: 'https://images.unsplash.com/photo-1639762681485-074b7f938ba0?q=80&w=400&auto=format&fit=crop',
+    name: 'Mark Ballandies',
+    role: 'CO-FOUNDER',
+    company: 'WIHI',
+    image: 'https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/68ea0bb2-589b-4a71-9c75-5bebfc51b135/image-1772712454557.png',
   },
   {
-    name: 'TBA',
-    role: '',
-    company: '',
-    image: 'https://images.unsplash.com/photo-1639762681485-074b7f938ba0?q=80&w=400&auto=format&fit=crop',
+    name: 'Felix Fritsch',
+    role: 'CO-FOUNDER',
+    company: 'COMMONS HUB AUSTRIA',
+    image: 'https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/68ea0bb2-589b-4a71-9c75-5bebfc51b135/image-1772712846737.png',
   },
   {
-    name: 'TBA',
-    role: '',
-    company: '',
-    image: 'https://images.unsplash.com/photo-1639762681485-074b7f938ba0?q=80&w=400&auto=format&fit=crop',
+    name: 'Sebastian Becker',
+    role: 'MANAGING DIRECTOR',
+    company: 'BLOCKCHAIN BUNDESVERBAND',
+    image: 'https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/68ea0bb2-589b-4a71-9c75-5bebfc51b135/image-1772713018638.png',
   },
   {
-    name: 'TBA',
-    role: '',
-    company: '',
-    image: 'https://images.unsplash.com/photo-1639762681485-074b7f938ba0?q=80&w=400&auto=format&fit=crop',
+    name: 'Mark Conway-Greenslade',
+    role: 'HEAD OF TECHNICAL STRATEGY',
+    company: 'INVERSED TECH',
+    image: 'https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/68ea0bb2-589b-4a71-9c75-5bebfc51b135/image-1772713221320.png',
+  },
+  {
+    name: 'Theo Beutel',
+    role: 'ECOSYSTEM DEVELOPMENT',
+    company: 'ETHEREUM FOUNDATION',
+    image: 'https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/68ea0bb2-589b-4a71-9c75-5bebfc51b135/image-1772717770958.png',
+  },
+  {
+    name: 'Marcel Uhlmann',
+    role: 'CIO & MANAGING DIRECTOR',
+    company: 'TRADEVEST',
+    image: 'https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/68ea0bb2-589b-4a71-9c75-5bebfc51b135/image-1772717876500.png',
+    linkedin: 'https://www.linkedin.com/in/marceluhlmann/',
+  },
+  {
+    name: 'Dr. Eric Falk',
+    role: 'CEO & FOUNDER',
+    company: 'FILEDGR',
+    image: 'https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/68ea0bb2-589b-4a71-9c75-5bebfc51b135/image-1772718367929.png',
+    linkedin: 'https://www.linkedin.com/in/erfalk/',
+  },
+  {
+    name: 'Donny Lewis',
+    role: 'ED STRATEGIC DEVELOPMENT',
+    company: 'VIRIDIS',
+    image: 'https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/68ea0bb2-589b-4a71-9c75-5bebfc51b135/image-1772718420015.png',
+    linkedin: 'https://www.linkedin.com/in/donny-lewis-77b71a13/',
+  },
+  {
+    name: 'Sagar Barvaliya',
+    role: 'GENERAL PARTNER',
+    company: 'BLOCKCHAIN FOUNDERS CAPITAL',
+    image: '/sagar-barvaliya.png',
+    linkedin: 'https://www.bfc.vc/',
   },
 ];
 
@@ -42,12 +78,7 @@ const Speakers: React.FC = () => {
       <div className="mx-auto max-w-[1280px] py-24 px-8 md:px-12">
         {/* Header Decorative Elements */}
           <div className="flex flex-col mb-12">
-            <div className="grid grid-cols-4 gap-0 mb-8 max-w-[400px] border-4 border-black neo-shadow">
-              <div className="aspect-square bg-primary"></div>
-              <div className="aspect-square bg-white border-l-4 border-black"></div>
-              <div className="aspect-square bg-muted border-l-4 border-black"></div>
-              <div className="aspect-square bg-primary border-l-4 border-black"></div>
-            </div>
+
             
             <div className="flex justify-between items-end pt-4">
               <div className="font-mono text-[14px] font-black tracking-[0.1em] text-black uppercase bg-primary px-2 border-2 border-black">
@@ -65,14 +96,12 @@ const Speakers: React.FC = () => {
             <h2 className="text-[48px] md:text-[64px] font-black tracking-[-0.03em] text-black uppercase leading-none">
               Speakers
             </h2>
-            <p className="font-mono text-[18px] font-black text-black/60 uppercase">
-              More info coming soon.
-            </p>
+
           </div>
-          <button className="bg-primary text-black px-8 py-4 border-4 border-black font-black uppercase tracking-wider text-[18px] neo-shadow hover:translate-x-[-2px] hover:translate-y-[-2px] active:translate-x-[0px] active:translate-y-[0px] transition-all flex items-center gap-2 group cursor-pointer">
-            Apply to Speak
-            <ArrowUpRight className="w-6 h-6 stroke-[3] group-hover:rotate-45 transition-transform" />
-          </button>
+            <TallyFormButton formId="D4VGDN" className="bg-primary text-black px-8 py-4 border-4 border-black font-black uppercase tracking-wider text-[18px] neo-shadow hover:translate-x-[-2px] hover:translate-y-[-2px] active:translate-x-[0px] active:translate-y-[0px] transition-all flex items-center gap-2 group cursor-pointer">
+              Apply to Speak
+              <ArrowUpRight className="w-6 h-6 stroke-[3] group-hover:rotate-45 transition-transform" />
+            </TallyFormButton>
         </div>
 
         {/* Speakers Grid */}
@@ -88,9 +117,11 @@ const Speakers: React.FC = () => {
                   sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
                 />
               </div>
-              <h3 className="text-[24px] font-black text-black mb-2 tracking-tight uppercase">
+              <h3 className="text-[24px] font-black text-black mb-1 tracking-tight uppercase">
                 {speaker.name}
               </h3>
+              <p className="font-mono text-[13px] font-bold text-black/60 uppercase">{speaker.role}</p>
+              <p className="font-mono text-[13px] font-bold text-black uppercase">{speaker.company}</p>
             </div>
           ))}
         </div>

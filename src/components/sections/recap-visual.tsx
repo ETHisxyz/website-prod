@@ -163,7 +163,7 @@ const RecapVisual = () => {
                 </div>
 
                 <div className="border-4 border-black shadow-[8px_8px_0px_0px_#6495ED] bg-white p-6 transform rotate-1">
-                  <h3 className="text-2xl font-black uppercase mb-4 tracking-tighter">Physical Convergence</h3>
+                    <h3 className="text-2xl font-black uppercase mb-4 tracking-tighter">Ethereum's Leading Voices.</h3>
                   <div className="text-lg font-bold leading-tight flex flex-col gap-4">
                     <p>
                       We are bringing the Ethereum community face-to-face with Europe’s institutional giants and tech leaders to embed decentralized protocols into the real economy.

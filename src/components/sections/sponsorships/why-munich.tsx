@@ -1,41 +1,45 @@
 import React from 'react';
 import { Factory, GraduationCap, Building, Server } from 'lucide-react';
 
-export function WhyMunich() {
-  const points = [
-    {
-      title: "Engineering Density",
-      description: "Munich is the mature hub for B2B, industrial, and deep-tech innovation, hosting global leaders like Siemens, BMW, and Infineon.",
-      icon: <Factory className="w-8 h-8" />
-    },
-    {
-      title: "Technical Integration",
-      description: "Academic Stronghold: Strategic proximity to the Technical University of Munich (TUM) and Fraunhofer Institutes.",
-      icon: <GraduationCap className="w-8 h-8" />
-    },
-    {
-      title: "The Venue",
-      description: "Hosted at the Deutsches Museum — a historic site symbolizing the intersection of society and cutting-edge technology. Now the biggest science and tech museum in the world.",
-      icon: <Building className="w-8 h-8" />
-    },
-    {
-      title: "Sovereign Infrastructure",
-      description: "The region is a leader in 'Deutschland Stack' AI factories and sovereign computing power.",
-      icon: <Server className="w-8 h-8" />
-    }
-  ];
+const points = [
+  {
+    title: "Engineering Density",
+    description: "The hub for industrial grade engineering and deep-tech. Home to global leaders like Siemens, BMW, and Infineon.",
+    icon: <Factory className="w-8 h-8" />,
+  },
+  {
+    title: "Technical Integration",
+    description: "Academic stronghold. Strategic proximity to the Technical University of Munich (TUM) and Fraunhofer Institutes.",
+    icon: <GraduationCap className="w-8 h-8" />,
+  },
+  {
+    title: "Sovereign Infrastructure",
+    description: "Regional leader in the 'Deutschland Stack', AI factories and sovereign computing power.",
+    icon: <Server className="w-8 h-8" />,
+  },
+  {
+    title: "The Venue",
+    description: "Hosted at the Deutsches Museum. The Biggest Technical and Science Museum in the World. A historic site symbolizing the intersection of society and cutting-edge technology.",
+    icon: <Building className="w-8 h-8" />,
+  },
+];
 
+
+export function WhyMunich() {
   return (
     <section className="py-24 px-4 bg-white border-b-4 border-black">
       <div className="max-w-[1280px] mx-auto">
-          <h2 className="text-4xl md:text-7xl font-black uppercase tracking-tighter mb-16 leading-none">
+        <h2 className="text-4xl md:text-7xl font-black uppercase tracking-tighter mb-4 leading-none">
           WHY MUNICH? <br />
-          <span className="bg-primary px-2">EUROPE’S INDUSTRIAL HEARTLAND.</span>
+          <span className="bg-primary px-2">EUROPE'S INDUSTRIAL HEARTLAND.</span>
         </h2>
+        <p className="text-xl font-bold uppercase tracking-tight mb-16 text-black/70">
+          Munich is at the heart of the global physical economy.
+        </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20">
           {points.map((point, index) => (
-            <div 
+            <div
               key={index}
               className="p-4 md:p-8 border-4 border-black bg-white neo-shadow flex gap-4 md:gap-6"
             >
@@ -46,13 +50,14 @@ export function WhyMunich() {
                 <h3 className="text-xl md:text-2xl font-black uppercase mb-2 leading-none break-words">
                   {point.title}
                 </h3>
-                <p className="text-base md:text-lg font-bold leading-tight break-words">
+                <p className="text-base md:text-lg font-bold leading-tight break-words text-black/80">
                   {point.description}
                 </p>
               </div>
             </div>
           ))}
         </div>
+
       </div>
     </section>
   );

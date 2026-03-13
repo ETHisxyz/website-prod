@@ -11,7 +11,7 @@ const Agenda = () => {
     {
       id: 2,
       title: "Track 2: DECENTRALIZED IDENTITY",
-      description: "Explore how to bridge European EUDI-Wallet standards with ZK-proofs to enable selective disclosure. Prove your attributes—age, residency, or status, without surrendering your data.",
+        description: "Explore how to leverage ZK-proofs to enable selective disclosure. Prove your attributes, age, residency, or status, without surrendering your data.",
     },
     {
       id: 3,

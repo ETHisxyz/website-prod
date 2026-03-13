@@ -1,28 +1,101 @@
 import React from 'react';
 import Image from 'next/image';
+import { TallyFormButton } from '@/components/tally-form-button';
 
 const Sponsors = () => {
     const partners = [
-      { 
-        name: 'Eth Munich', 
-        logo: 'https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/68ea0bb2-589b-4a71-9c75-5bebfc51b135/TVxht8sY_400x400-1772067056919.jpg',
-        displayName: 'ETHMUNICH'
-      },
-      { 
-        name: 'Viridis', 
-        logo: 'https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/68ea0bb2-589b-4a71-9c75-5bebfc51b135/Screenshot-2026-02-26-004542-1772067006700.png',
-        isLarge: true
-      },
-      { 
-        name: '1E9', 
-        logo: 'https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/68ea0bb2-589b-4a71-9c75-5bebfc51b135/a1d97b_a269cffeaf7244f3961182ad407c9ac9-mv2-1772067288306.png' 
-      },
-      { 
-        name: 'VDAO', 
-        logo: 'https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/68ea0bb2-589b-4a71-9c75-5bebfc51b135/1500x500-1772066987791.jpeg',
-        isLarge: true
-      },
-    ];
+         { 
+           name: 'Eth Munich', 
+           logo: 'https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/68ea0bb2-589b-4a71-9c75-5bebfc51b135/TVxht8sY_400x400-1772067056919.jpg',
+           displayName: 'ETHMUNICH',
+           url: 'https://ethmunich.eth.limo/',
+         },
+         { 
+           name: 'Viridis', 
+           logo: 'https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/68ea0bb2-589b-4a71-9c75-5bebfc51b135/Screenshot-2026-02-26-004542-1772067006700.png',
+           url: 'https://viridis.info/',
+         },
+        { 
+          name: '1E9', 
+          logo: 'https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/68ea0bb2-589b-4a71-9c75-5bebfc51b135/a1d97b_a269cffeaf7244f3961182ad407c9ac9-mv2-1772067288306.png',
+          url: 'https://www.1e9.community/',
+        },
+        { 
+          name: 'VDAO', 
+          logo: 'https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/68ea0bb2-589b-4a71-9c75-5bebfc51b135/1500x500-1772066987791.jpeg',
+          url: 'https://vdao.io/',
+        },
+        {
+          name: 'SpaghetETH',
+          logo: 'https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/68ea0bb2-589b-4a71-9c75-5bebfc51b135/image-1772709381084.png',
+          url: 'https://www.spaghett-eth.com/',
+        },
+        {
+          name: 'Breaking DePIN',
+          logo: 'https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/68ea0bb2-589b-4a71-9c75-5bebfc51b135/image-1772710083350.png',
+          url: 'https://breakingdepin.ch/',
+        },
+         {
+           name: 'TradeVest',
+           logo: 'https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/68ea0bb2-589b-4a71-9c75-5bebfc51b135/image-1772717977521.png',
+           url: 'https://tradevest.ai/',
+         },
+        {
+          name: 'OnocoY',
+          logo: 'https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/68ea0bb2-589b-4a71-9c75-5bebfc51b135/image-1772709623506.png',
+          url: 'https://www.onocoy.com/',
+        },
+        {
+          name: 'DAO Suisse',
+          logo: 'https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/68ea0bb2-589b-4a71-9c75-5bebfc51b135/image-1772709684007.png',
+          url: 'https://www.daosuisse.com/',
+        },
+         {
+           name: 'Commons Hub',
+           logo: 'https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/68ea0bb2-589b-4a71-9c75-5bebfc51b135/OIP-1772709720092.jpeg',
+           url: 'https://www.commons-hub.at/',
+         },
+         {
+           name: 'University of Zurich / UZH Blockchain Center',
+           logo: 'https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/68ea0bb2-589b-4a71-9c75-5bebfc51b135/image-1772710275885.png',
+           url: 'https://blockchain.uzh.ch/',
+         },
+          {
+            name: 'W3 MUC',
+            logo: '/w3muc-logo.png',
+            url: 'https://w3muc.de/',
+          },
+         {
+           name: 'Blockchain Bundesverband',
+           logo: 'https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/68ea0bb2-589b-4a71-9c75-5bebfc51b135/image-1772718091195.png',
+           url: 'https://bundesblock.de/',
+         },
+         {
+           name: 'BFC',
+           logo: 'https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/68ea0bb2-589b-4a71-9c75-5bebfc51b135/image-1772717999564.png',
+           url: 'https://www.bfc.vc/',
+         },
+          {
+            name: 'filedgr',
+            logo: 'https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/68ea0bb2-589b-4a71-9c75-5bebfc51b135/image-1772718128920.png',
+            url: 'https://filedgr.com/',
+          },
+          {
+            name: 'DAWO',
+            logo: '/dawo-logo.png',
+            url: 'https://dawo26.org/',
+          },
+          {
+            name: '5thWorld',
+            logo: '/5thworld-logo.webp',
+            url: 'https://5thworld.com/',
+          },
+          {
+            name: 'TUM Blockchain Club',
+            logo: '/tum-blockchain-logo.png',
+            url: 'https://www.tum-blockchain.com/',
+          },
+        ];
 
     return (
       <section id="sponsors" className="bg-white">
@@ -41,34 +114,40 @@ const Sponsors = () => {
               {/* Partners Grid */}
             <div className="mb-12">
               <div className="p-8 md:p-12 bg-white border-4 border-black neo-shadow">
-                <div className="grid grid-cols-2 md:grid-cols-4 border-t-4 border-l-4 border-black">
-                  {partners.map((partner, index) => (
-                    <div 
-                      key={index} 
-                      className="h-32 md:h-48 flex flex-col items-center justify-center p-4 md:p-6 border-r-4 border-b-4 border-black group hover:bg-primary/20 transition-colors bg-white"
-                    >
-                    <div className={`relative w-full h-full flex flex-col items-center justify-center group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform ${(partner as any).displayName ? 'gap-2' : ''}`}>
-                       <div className="relative w-full h-full">
-                           <Image 
-                              src={partner.logo} 
-                              alt={partner.name}
-                              fill
-                              className="object-contain p-4 md:p-6"
-                           />
-                       </div>
-                       {(partner as any).displayName && (
-                         <span className="font-mono font-black text-[10px] md:text-[12px] tracking-widest text-black uppercase">{ (partner as any).displayName }</span>
-                       )}
-                    </div>
-                  </div>
-                ))}
+                <div className="grid grid-cols-2 md:grid-cols-5 border-t-4 border-l-4 border-black">
+                    {partners.map((partner, index) => {
+                       const inner = (
+                         <div className="relative w-full h-full group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform flex flex-col items-center justify-center gap-1">
+                           <div className="relative flex-1 w-full">
+                             <Image
+                               src={partner.logo}
+                               alt={partner.name}
+                               fill
+                               sizes="(max-width: 768px) 50vw, 20vw"
+                               className="object-contain p-3"
+                             />
+                           </div>
+                           {partner.displayName && (
+                             <span className="font-mono text-[10px] font-black uppercase tracking-widest text-black/70 pb-1">
+                               {partner.displayName}
+                             </span>
+                           )}
+                         </div>
+                       );
+                       const cls = `h-32 md:h-40 flex items-center justify-center p-4 border-r-4 border-b-4 border-black group hover:outline hover:outline-4 hover:outline-black hover:outline-offset-[-4px] transition-all ${partner.darkBg ? 'bg-black' : 'bg-white'}`;
+                       return partner.url ? (
+                         <a key={index} href={partner.url} target="_blank" rel="noopener noreferrer" className={cls}>{inner}</a>
+                       ) : (
+                         <div key={index} className={cls}>{inner}</div>
+                       );
+                     })}
+                </div>
               </div>
             </div>
-          </div>
 
             <div className="p-12 bg-black border-4 border-black neo-shadow flex justify-center">
-              <a 
-                href="https://tally.so/r/jaBZ66" 
+              <TallyFormButton
+                formId="jaBZ66"
                 className="btn-neo bg-white text-black hover:bg-primary flex items-center gap-4 group/btn px-8"
               >
                 <div className="flex items-center gap-3">
@@ -103,7 +182,7 @@ const Sponsors = () => {
                   <line x1="7" y1="17" x2="17" y2="7"></line>
                   <polyline points="7 7 17 7 17 17"></polyline>
                 </svg>
-              </a>
+              </TallyFormButton>
             </div>
       </div>
     </section>

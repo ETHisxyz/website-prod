@@ -10,6 +10,7 @@ import { Audience } from "@/components/sections/sponsorships/audience";
 import FestivalDerZukunft from "@/components/sections/festival-der-zukunft";
 import TracksSection from "@/components/sections/tracks";
 import { SponsorshipTiers } from "@/components/sections/sponsorships/tiers";
+import { SponsorCTAButton } from "@/components/sections/sponsorships/sponsor-cta-button";
 
 export const metadata = {
   title: "Sponsorships | ETHis Summit",
@@ -29,15 +30,10 @@ export default function SponsorshipsPage() {
                 </h1>
               <div className="max-w-3xl mb-12">
                   <p className="text-lg md:text-2xl lg:text-3xl font-bold uppercase tracking-tight leading-tight">
-                    Bridge the gap between protocol and real world. Access the $100T+ RWA frontier.
+                    Bridge the gap between protocol and real world.
                   </p>
               </div>
-              <a
-                href="https://tally.so/r/jaBZ66"
-                className="bg-primary text-black px-12 py-6 text-2xl font-black uppercase tracking-widest hover:bg-white border-4 border-black transition-all hover:translate-x-1 hover:-translate-y-1 hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] inline-block text-center neo-shadow"
-              >
-                Become a Sponsor
-              </a>
+              <SponsorCTAButton className="bg-primary text-black px-12 py-6 text-2xl font-black uppercase tracking-widest hover:bg-white border-4 border-black transition-all hover:translate-x-1 hover:-translate-y-1 hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] inline-block text-center neo-shadow" />
             </div>
         </div>
 

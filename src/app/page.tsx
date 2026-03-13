@@ -1,9 +1,11 @@
 import Navbar from "@/components/sections/navbar";
 import HeroSection from "@/components/sections/hero";
 import RecapVisual from "@/components/sections/recap-visual";
-import Agenda from "@/components/sections/agenda";
 import NextYearPromo from "@/components/sections/next-year-promo";
+import FestivalDerZukunft from "@/components/sections/festival-der-zukunft";
+import TracksSection from "@/components/sections/tracks";
 import SessionsSection from "@/components/sections/sessions";
+import FestivalPartners from "@/components/sections/festival-partners";
 import ExploreSection from "@/components/sections/explore-cards";
 import Speakers from "@/components/sections/speakers";
 import Sponsors from "@/components/sections/sponsors";
@@ -16,12 +18,14 @@ export default function Home() {
     <div className="min-h-screen bg-white">
       <Navbar />
         <main>
-          <HeroSection />
-          <RecapVisual />
-          <NextYearPromo />
-          <SessionsSection />
-          <ExploreSection />
-          <Agenda />
+            <HeroSection />
+            <FestivalDerZukunft />
+            <RecapVisual />
+            <FestivalPartners />
+            <NextYearPromo />
+            <TracksSection />
+            <SessionsSection />
+            <ExploreSection />
           <Speakers />
           <Sponsors />
           <FAQ />

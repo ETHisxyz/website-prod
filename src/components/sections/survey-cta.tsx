@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowUpRight } from 'lucide-react';
+import { TallyFormButton } from '@/components/tally-form-button';
 
 const SurveyCTA = () => {
   return (
@@ -12,19 +13,19 @@ const SurveyCTA = () => {
                     <span className="text-white drop-shadow-[4px_4px_0px_#000]">INVOLVED</span>
                   </h2>
                   <p className="text-[18px] md:text-[20px] font-bold text-black leading-tight">
-                    APPLICATIONS FOR OUR OPERATIONS SQUAD NOW OPEN
+                      APPLICATIONS FOR OUR VOLUNTEER SQUAD NOW OPEN
                   </p>
 
                 </div>
 
                 <div className="flex flex-col sm:flex-row items-center gap-6">
-                  <a 
-                    href="#" 
+                  <TallyFormButton
+                    formId="A7JrXB"
                     className="btn-neo bg-black text-white min-w-[240px] flex items-center justify-center border-4 border-black hover:bg-white hover:text-black transition-colors"
                   >
                     <span className="font-mono text-[16px] font-black tracking-[0.1em]">Apply Now</span>
                     <ArrowUpRight className="ml-4 w-6 h-6" />
-                  </a>
+                  </TallyFormButton>
                 </div>
         </div>
       </div>

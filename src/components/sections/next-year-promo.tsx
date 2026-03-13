@@ -37,9 +37,9 @@ export default function NextYearPromo() {
                 className="object-cover group-hover:scale-110 transition-transform duration-700 opacity-80"
               />
             <div className="absolute inset-0 bg-secondary/20 mix-blend-multiply"></div>
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 p-4 bg-white border-4 border-black neo-shadow -rotate-6">
-               <span className="text-black font-black text-2xl uppercase">Save the date</span>
-            </div>
+            <a href="/tickets" className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 p-4 bg-primary border-4 border-black neo-shadow -rotate-6 hover:rotate-0 transition-transform">
+               <span className="text-black font-black text-2xl uppercase">Get Tickets</span>
+            </a>
           </div>
         </div>
       </div>

@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import { Play, ArrowUpRight, ChevronRight } from 'lucide-react';
+import { Play, ChevronRight } from 'lucide-react';
 
 const SessionsSection = () => {
     const sessions = [
@@ -39,20 +39,18 @@ const SessionsSection = () => {
     ];
 
   return (
-    <section className="bg-white">
-      {/* Section Header Top Label */}
+    <section id="sessions" className="bg-white border-t-4 border-black">
       <div className="max-w-[1280px] mx-auto">
-            <div className="grid grid-cols-12">
-              <div className="col-span-6 p-4 bg-primary">
+            <div className="grid grid-cols-12 border-b-4 border-black">
+              <div className="col-span-5 p-4 bg-primary border-r-4 border-black">
                 <span className="font-mono text-[14px] text-black font-black uppercase tracking-wider">Munich 2026</span>
               </div>
-            <div className="col-span-6 p-4 flex items-center gap-2 bg-muted">
+            <div className="col-span-7 p-4 flex items-center gap-2 bg-muted">
               <span className="font-mono text-[14px] text-black font-black uppercase tracking-wider">Curated Sessions</span>
               <div className="w-3 h-3 bg-black"></div>
             </div>
           </div>
 
-        {/* Section Title */}
           <div className="p-10 md:p-16 bg-white">
             <h2 className="text-[48px] md:text-[64px] font-black leading-[0.9] tracking-[-0.03em] max-w-lg text-black uppercase">
               Explore <br />
@@ -60,17 +58,15 @@ const SessionsSection = () => {
             </h2>
           </div>
 
-        {/* Video Player & Sidebar Grid */}
         <div className="grid grid-cols-1 md:grid-cols-12">
-          {/* Main Video Side */}
           <div className="md:col-span-8 p-10 md:p-12 bg-muted">
-            <a 
+            <a
               href={sessions[0].link}
               target="_blank"
               rel="noopener noreferrer"
               className="block relative aspect-video w-full border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] overflow-hidden group cursor-pointer bg-black"
             >
-              <Image 
+              <Image
                 src={sessions[0].thumbnail}
                 alt="Main Session"
                 fill
@@ -84,7 +80,7 @@ const SessionsSection = () => {
             </a>
               <div className="mt-8 flex flex-col sm:flex-row sm:justify-between sm:items-end gap-4">
                   <h3 className="text-2xl md:text-4xl font-black tracking-tight text-black uppercase underline decoration-primary decoration-8 underline-offset-4">{sessions[0].title}</h3>
-                  <a 
+                  <a
                     href={sessions[0].link}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -95,11 +91,10 @@ const SessionsSection = () => {
                 </div>
             </div>
 
-            {/* Sidebar Playlist Side */}
             <div className="md:col-span-4 flex flex-col bg-white">
               <div className="flex-grow">
-                {sessions.map((session, index) => (
-                  <a 
+                {sessions.map((session) => (
+                  <a
                     key={session.id}
                     href={session.link}
                     target="_blank"
@@ -107,7 +102,7 @@ const SessionsSection = () => {
                     className={`flex gap-4 p-6 cursor-pointer transition-colors hover:bg-primary/20 group ${session.isActive ? 'bg-primary' : ''}`}
                   >
                   <div className="relative w-[100px] h-[56px] flex-shrink-0 border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] overflow-hidden bg-black">
-                    <Image 
+                    <Image
                       src={session.thumbnail}
                       alt={session.title}
                       fill
