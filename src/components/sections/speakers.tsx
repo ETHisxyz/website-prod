@@ -31,6 +31,13 @@ const speakers: Speaker[] = [
     image: 'https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/68ea0bb2-589b-4a71-9c75-5bebfc51b135/image-1772713018638.png',
   },
   {
+    name: 'Andrea Leiter',
+    role: 'DIRECTOR',
+    company: 'AMSTERDAM CENTER FOR INTERNATIONAL LAW',
+    image: '/andrea-leiter.png',
+    linkedin: 'https://www.linkedin.com/in/andrea-leiter',
+  },
+  {
     name: 'Mark Conway-Greenslade',
     role: 'HEAD OF TECHNICAL STRATEGY',
     company: 'INVERSED TECH',
@@ -41,6 +48,13 @@ const speakers: Speaker[] = [
     role: 'ECOSYSTEM DEVELOPMENT',
     company: 'ETHEREUM FOUNDATION',
     image: 'https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/68ea0bb2-589b-4a71-9c75-5bebfc51b135/image-1772717770958.png',
+  },
+  {
+    name: 'Mely A',
+    role: 'PARTNERSHIPS MANAGER',
+    company: 'ENS',
+    image: '/mely-a.png',
+    linkedin: 'https://www.linkedin.com/in/mely1',
   },
   {
     name: 'Marcel Uhlmann',

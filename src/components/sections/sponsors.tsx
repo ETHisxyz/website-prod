@@ -106,7 +106,7 @@ const Sponsors = () => {
                  <h2 className="text-[36px] sm:text-[48px] md:text-[64px] font-black leading-tight tracking-tight uppercase text-black break-words">Partners</h2>
               </div>
                 <div className="md:w-1/2 p-6 md:p-12 flex items-center justify-between bg-muted border-t-4 md:border-t-0 md:border-l-4 border-black overflow-hidden">
-                   <p className="font-mono text-[15px] md:text-[18px] tracking-[0.05em] uppercase text-black font-black">Building the Real World</p>
+                   <p className="font-mono text-[15px] md:text-[18px] tracking-[0.05em] uppercase text-black font-black">Building in the Real World</p>
                    <div className="w-6 h-6 flex-shrink-0 bg-black animate-bounce ml-4"></div>
                 </div>
               </div>

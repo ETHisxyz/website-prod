@@ -6,11 +6,11 @@ import { ArrowUpRight } from 'lucide-react';
 const tracks = [
   {
     number: "01",
-    title: "Real World Assets",
+    title: "Real World Productive Assets",
     tag: "RWAs",
     color: "bg-primary",
     textColor: "text-black",
-    body: "With over $20B already on-chain, Ethereum is the neutral settlement layer for the $100T+ market in treasuries, private credit, and equities. We are moving past pilots into the era of programmable ownership and the replacement of legacy intermediaries with cryptographic enforcement.",
+    body: "Ethereum is the ideal home for trillions in global productive assets. From real estate and agriculture to financial instruments, the network transforms static value into programmable cash flow. By moving these assets on-chain, we reduce operational friction and eliminate the \"middleman tax\" of expensive, legacy intermediaries.",
     stat: "$20B+",
     statLabel: "Already on-chain",
   },

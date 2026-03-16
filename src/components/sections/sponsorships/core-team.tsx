@@ -34,6 +34,11 @@ const team = [
     image: "/daniel-kliche.png",
     linkedin: "https://www.linkedin.com/in/dr-daniel-kliche-2147a49/",
   },
+  {
+    name: "Anton Hiller",
+    image: "/anton-hiller.jpg",
+    linkedin: "https://www.linkedin.com/in/anton-hiller-86b03754/",
+  },
 ];
 
 export function CoreTeam() {
@@ -48,7 +53,7 @@ export function CoreTeam() {
           </div>
           <div className="bg-[#f3f4f6] px-8 py-10">
             <h2 className="text-4xl md:text-7xl font-black uppercase tracking-tighter leading-none mb-12">
-              CORE TEAM
+              COORDINATION TEAM
             </h2>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-0 border-t-4 border-l-4 border-black">
               {team.map((member) => (

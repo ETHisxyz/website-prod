@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "ETHis | The Real World Ethereum Summit",
+  title: "ETHis | Ethereum for the Real World",
   description: "ETHis is the Real World Ethereum Summit, coordinating builders and operators to bridge the gap between protocol and the real economy. Join us on 2-3 July 2026.",
 };
 
