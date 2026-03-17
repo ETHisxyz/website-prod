@@ -20,7 +20,6 @@ const partners: Partner[] = [
   { name: "City of Munich", url: "https://www.muenchen.de", logo: "https://logo.clearbit.com/muenchen.de" },
   { name: "UnternehmerTUM", url: "https://www.unternehmertum.de", logo: "https://logo.clearbit.com/unternehmertum.de" },
   { name: "TUM Venture Labs", url: "https://www.tum-venture-labs.de", logo: "https://logo.clearbit.com/tum-venture-labs.de" },
-  { name: "TUM Blockchain Club", url: "https://www.tum-blockchain.com", logo: "/tum-blockchain-logo.png" },
   { name: "ESA", url: "https://www.esa.int", logo: "https://logo.clearbit.com/esa.int" },
   { name: "Filmfest München", url: "https://www.filmfest-muenchen.de", logo: "https://logo.clearbit.com/filmfest-muenchen.de" },
   { name: "XR HUB Bavaria", url: "https://xrhub-bavaria.de", logo: "https://logo.clearbit.com/xrhub-bavaria.de" },
