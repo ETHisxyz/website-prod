@@ -165,7 +165,7 @@ const HeroSection = () => {
           <div className="grid grid-cols-1 md:grid-cols-2">
             <div className="p-10 md:p-16 lg:p-20 flex flex-col justify-center">
               <p className="text-[24px] md:text-[32px] lg:text-[42px] text-black font-black leading-[1.1] tracking-tighter uppercase">
-                Join the first summit dedicated to Ethereum in the physical world.<br /><br />
+                Join the summit dedicated to Ethereum in the physical world.<br /><br />
                 Where digital protocol meets real life.
               </p>
             </div>
