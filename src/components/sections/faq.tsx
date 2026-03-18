@@ -6,7 +6,7 @@ import { Plus, Minus } from 'lucide-react';
 const faqs = [
   {
     question: "WHAT IS ETHis?",
-    answer: "ETHis is the Real World Ethereum Summit, coordinating builders and operators to foster a more sovereign, resilient future. We bridge the gap between protocol and the real economy, focusing on the $100T+ RWA frontier."
+    answer: "ETHis is the Real World Ethereum Summit, coordinating builders and operators to foster a more sovereign, resilient future. We bridge the gap between protocol and real world."
   },
   {
     question: "WHEN AND WHERE IS THE SUMMIT?",
