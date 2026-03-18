@@ -18,7 +18,7 @@ const nextConfig: NextConfig = {
       },
     ],
   },
-  outputFileTracingRoot: path.resolve(__dirname, '../../'),
+  ...(process.env.VERCEL ? {} : { outputFileTracingRoot: path.resolve(__dirname, '../../') }),
   typescript: {
     ignoreBuildErrors: true,
   },
