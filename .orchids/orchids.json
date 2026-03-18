@@ -5,7 +5,7 @@
   "startupCommands": [
     "bun install; bun run dev"
   ],
-  "templateId": "any",
+  "templateId": "nextjs",
   "vercelProjectId": "prj_zGfnoo7pkhktxzFml8gMNh9HqlKd",
   "deployedWithUserToken": true,
   "detectedFramework": "nextjs"
