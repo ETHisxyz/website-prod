@@ -36,7 +36,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
-.env.local
+# .env.local # Removed by Orchids to allow .env files
 debug.log
 tickets-raw.json
 test-wix.js
