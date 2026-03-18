@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import Link from "next/link";
 import { Ticket, X, Menu } from "lucide-react";
 
 const Navbar = () => {
@@ -33,11 +34,11 @@ const Navbar = () => {
         }`}
       >
         <div className="w-full max-w-[1280px] px-4 flex items-center justify-between">
-          <div className="flex items-center gap-6">
-            <a
-              href="/"
-              className="flex items-center gap-2 hover:translate-x-1 hover:-translate-y-1 transition-transform group"
-            >
+            <div className="flex items-center gap-6">
+              <Link
+                href="/"
+                className="flex items-center gap-2 hover:translate-x-1 hover:-translate-y-1 transition-transform group"
+              >
               <svg
                 viewBox="0 0 256 417"
                 className="h-[24px] w-auto fill-current text-black"

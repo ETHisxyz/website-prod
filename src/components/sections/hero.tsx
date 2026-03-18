@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import { ArrowUpRight } from 'lucide-react';
 
 const DiamondSVG = ({ className, id = "a" }: { className?: string; id?: string }) => (
@@ -107,11 +108,11 @@ const HeroSection = () => {
         <div className="max-w-[1280px] mx-auto">
           <div className="px-8 flex flex-row-reverse items-center justify-between gap-8">
             <div className="flex flex-col items-end text-right">
-              <a href="/" className="inline-block transition-transform duration-300 hover:-translate-x-2 hover:-translate-y-2">
-                <h1 className="font-display text-[150px] lg:text-[220px] font-black leading-[0.8] tracking-tighter text-black normal-case text-right">
-                  ETHis
-                </h1>
-              </a>
+                <Link href="/" className="inline-block transition-transform duration-300 hover:-translate-x-2 hover:-translate-y-2">
+                  <h1 className="font-display text-[150px] lg:text-[220px] font-black leading-[0.8] tracking-tighter text-black normal-case text-right">
+                    ETHis
+                  </h1>
+                </Link>
               <div className="flex flex-wrap items-center justify-end gap-4 mt-8 text-right">
                 <span className="inline-block bg-white border-4 border-black px-4 py-2 text-[32px] lg:text-[44px] font-black uppercase shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] -rotate-1">
                   Ethereum
@@ -151,7 +152,7 @@ const HeroSection = () => {
                     <span className="text-[18px] md:text-[22px] font-black text-black tracking-tighter uppercase">
                       {item}
                     </span>
-                    <span className="text-[18px] md:text-[22px] font-black text-black/30">//</span>
+                      <span className="text-[18px] md:text-[22px] font-black text-black/30">{"//"}</span>
                   </React.Fragment>
                 ))}
               </div>
@@ -171,13 +172,13 @@ const HeroSection = () => {
             </div>
 
             <div className="p-10 md:p-16 lg:p-20 bg-primary flex flex-col justify-center border-t-4 md:border-t-0 md:border-l-4 border-black">
-              <a
-                href="/tickets"
+                <Link
+                  href="/tickets"
                   className="btn-neo w-full h-[84px] text-[18px] md:text-[20px] tracking-widest flex items-center justify-between px-6 md:px-10 bg-white border-4 border-black shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-[6px] hover:translate-y-[6px] transition-all"
-              >
-                <span className="font-black">GET TICKETS</span>
-                <ArrowUpRight className="w-8 h-8 stroke-[4]" />
-              </a>
+                >
+                  <span className="font-black">GET TICKETS</span>
+                  <ArrowUpRight className="w-8 h-8 stroke-[4]" />
+                </Link>
             </div>
           </div>
         </div>

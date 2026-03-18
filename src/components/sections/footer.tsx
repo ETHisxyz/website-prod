@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import { Twitter, Linkedin } from 'lucide-react';
 import { TallyFormButton } from '@/components/tally-form-button';
 
@@ -38,7 +39,7 @@ const Footer = () => {
                       <li><a href="#" className="font-bold hover:underline decoration-primary decoration-4 uppercase text-black">Sessions</a></li>
                       <li><a href="#" className="font-bold hover:underline decoration-primary decoration-4 uppercase text-black">Speakers</a></li>
                       <li><a href="#" className="font-bold hover:underline decoration-primary decoration-4 uppercase text-black">Agenda</a></li>
-                      <li><a href="/#sponsors" className="font-bold hover:underline decoration-primary decoration-4 uppercase text-black">Partners</a></li>
+                        <li><Link href="/#sponsors" className="font-bold hover:underline decoration-primary decoration-4 uppercase text-black">Partners</Link></li>
                 </ul>
             </div>
               <div className="flex flex-col gap-4">
@@ -73,9 +74,9 @@ const Footer = () => {
             </div>
 
           
-            <a href="/tickets#tickets" className="btn-neo px-6 py-3 bg-primary border-4 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all font-mono text-[14px] font-black uppercase tracking-widest text-black">
-              GET TICKETS
-            </a>
+              <Link href="/tickets#tickets" className="btn-neo px-6 py-3 bg-primary border-4 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all font-mono text-[14px] font-black uppercase tracking-widest text-black">
+                GET TICKETS
+              </Link>
         </div>
       </div>
     </footer>
