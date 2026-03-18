@@ -110,10 +110,10 @@ const RecapVisual = () => {
               </div>
 
                 <div className="border-4 border-black shadow-[8px_8px_0px_0px_#FF8C8C] bg-white p-6 transform -rotate-2">
-                  <h3 className="text-2xl font-black uppercase mb-4 tracking-tighter">Europe's Leading Tech Festival</h3>
+                    <h3 className="text-2xl font-black uppercase mb-4 tracking-tighter">Europe&apos;s Leading Tech Festival</h3>
                   <div className="text-lg font-bold leading-tight flex flex-col gap-4">
                       <p>
-                        Organized by 1E9 and the Deutsches Museum, Munich's annual Festival der Zukunft (Festival of the Future) brings together over 1500 engineers, innovators, scientists, tech enthusiasts and builders to explore how tech can empower humanity.
+                          Organized by 1E9 and the Deutsches Museum, Munich&apos;s annual Festival der Zukunft (Festival of the Future) brings together over 1500 engineers, innovators, scientists, tech enthusiasts and builders to explore how tech can empower humanity.
                       </p>
                       <p>
                         Technology, science, and creativity meet a community excited about the future. 100+ speakers and artists, interactive experiences, and networking in a unique location.
@@ -163,7 +163,7 @@ const RecapVisual = () => {
                 </div>
 
                 <div className="border-4 border-black shadow-[8px_8px_0px_0px_#6495ED] bg-white p-6 transform rotate-1">
-                    <h3 className="text-2xl font-black uppercase mb-4 tracking-tighter">Ethereum's Leading Voices.</h3>
+                      <h3 className="text-2xl font-black uppercase mb-4 tracking-tighter">Ethereum&apos;s Leading Voices.</h3>
                   <div className="text-lg font-bold leading-tight flex flex-col gap-4">
                     <p>
                       We are bringing the Ethereum community face-to-face with Europe’s institutional giants and tech leaders to embed decentralized protocols into the real economy.

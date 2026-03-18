@@ -175,7 +175,7 @@ export default function TicketsPage() {
                 <div className="w-16 h-16 bg-black border-4 border-black flex items-center justify-center">
                   <Check className="w-8 h-8 text-primary stroke-[4]" />
                 </div>
-                <h4 className="text-[28px] font-black uppercase tracking-tighter">You're registered!</h4>
+                  <h4 className="text-[28px] font-black uppercase tracking-tighter">You&apos;re registered!</h4>
                 <p className="font-bold uppercase text-black/60 leading-snug max-w-sm">
                   Livestream links will be sent to <span className="text-black">{virtualForm.email}</span> before the event. See you on 2–3 July 2026.
                 </p>
@@ -282,7 +282,7 @@ export default function TicketsPage() {
                   <span className="text-[18px] md:text-[22px] font-black text-black tracking-tighter uppercase">
                     {item}
                   </span>
-                  <span className="text-[18px] md:text-[22px] font-black text-black/30">//</span>
+                    <span className="text-[18px] md:text-[22px] font-black text-black/30">{"//"}</span>
                 </React.Fragment>
               ))}
             </div>
@@ -482,7 +482,7 @@ export default function TicketsPage() {
       <section className="bg-white py-20 px-6 md:px-12 border-b-4 border-black">
         <div className="max-w-[1280px] mx-auto">
           <h2 className="text-[40px] md:text-[64px] font-black uppercase tracking-tighter leading-none mb-12">
-            What's Included
+              What&apos;s Included
           </h2>
           <div className="overflow-x-auto border-4 border-black neo-shadow">
             <table className="w-full border-collapse" style={{ minWidth: "560px" }}>

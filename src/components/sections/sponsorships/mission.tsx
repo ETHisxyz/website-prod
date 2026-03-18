@@ -96,7 +96,7 @@ export function Mission() {
               animate={inflectionInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
             >
-              Our inaugural ETHis Summit event marks the arrival of the World Computer as a permanent exhibit at the Deutsches Museum, the world's largest science and technology archive.
+                Our inaugural ETHis Summit event marks the arrival of the World Computer as a permanent exhibit at the Deutsches Museum, the world&apos;s largest science and technology archive.
             </motion.p>
           </div>
 

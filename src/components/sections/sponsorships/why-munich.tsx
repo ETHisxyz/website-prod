@@ -31,7 +31,7 @@ export function WhyMunich() {
       <div className="max-w-[1280px] mx-auto">
         <h2 className="text-4xl md:text-7xl font-black uppercase tracking-tighter mb-4 leading-none">
           WHY MUNICH? <br />
-          <span className="bg-primary px-2">EUROPE'S INDUSTRIAL HEARTLAND.</span>
+            <span className="bg-primary px-2">EUROPE&apos;S INDUSTRIAL HEARTLAND.</span>
         </h2>
         <p className="text-xl font-bold uppercase tracking-tight mb-16 text-black/70">
           Munich is at the heart of the global physical economy.

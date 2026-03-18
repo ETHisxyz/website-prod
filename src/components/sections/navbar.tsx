@@ -16,7 +16,9 @@ const Navbar = () => {
 
   useEffect(() => {
     document.body.style.overflow = mobileOpen ? "hidden" : "";
-    return () => { document.body.style.overflow = ""; };
+    return () => {
+      document.body.style.overflow = "";
+    };
   }, [mobileOpen]);
 
   const navLinks = [
@@ -34,11 +36,11 @@ const Navbar = () => {
         }`}
       >
         <div className="w-full max-w-[1280px] px-4 flex items-center justify-between">
-            <div className="flex items-center gap-6">
-              <Link
-                href="/"
-                className="flex items-center gap-2 hover:translate-x-1 hover:-translate-y-1 transition-transform group"
-              >
+          <div className="flex items-center gap-6">
+            <Link
+              href="/"
+              className="flex items-center gap-2 hover:translate-x-1 hover:-translate-y-1 transition-transform group"
+            >
               <svg
                 viewBox="0 0 256 417"
                 className="h-[24px] w-auto fill-current text-black"
@@ -54,59 +56,49 @@ const Navbar = () => {
               <span className="font-display font-black text-[32px] tracking-tighter antialiased text-black">
                 ETHis
               </span>
-            </a>
+            </Link>
           </div>
 
-          {/* Desktop nav */}
           <nav className="hidden lg:flex items-center h-full">
             <ul className="flex items-center gap-4 h-full">
               {navLinks.map((link) => (
                 <li key={link.name} className="h-full">
-                  <a
+                  <Link
                     href={link.href}
                     className="flex items-center px-4 h-[72px] font-mono text-[14px] font-black uppercase tracking-wider text-black hover:bg-primary/20 transition-colors relative group"
                   >
-                    <span className="block group-hover:underline decoration-4">
-                      {link.name}
-                    </span>
-                  </a>
+                    <span className="block group-hover:underline decoration-4">{link.name}</span>
+                  </Link>
                 </li>
               ))}
             </ul>
           </nav>
 
           <div className="flex items-center h-full gap-3">
-            {/* Register CTA */}
-            <a
+            <Link
               href="/tickets#tickets"
               className="group flex items-center gap-1.5 px-3 h-[36px] font-mono text-[12px] font-black uppercase tracking-wider text-black bg-primary border-2 border-black shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[2px] hover:-translate-y-[2px] hover:shadow-[5px_5px_0px_0px_rgba(0,0,0,1)] transition-all"
             >
-                <span>Get Tickets</span>
+              <span>Get Tickets</span>
               <Ticket className="w-3.5 h-3.5 stroke-[3]" />
-            </a>
+            </Link>
 
-            {/* Mobile burger */}
             <button
               className="lg:hidden flex items-center justify-center w-10 h-10 border-2 border-black bg-white focus:outline-none"
               onClick={() => setMobileOpen((v) => !v)}
               aria-label="Toggle menu"
             >
-              {mobileOpen ? (
-                <X className="w-5 h-5 stroke-[3]" />
-              ) : (
-                <Menu className="w-5 h-5 stroke-[3]" />
-              )}
+              {mobileOpen ? <X className="w-5 h-5 stroke-[3]" /> : <Menu className="w-5 h-5 stroke-[3]" />}
             </button>
           </div>
         </div>
       </header>
 
-      {/* Mobile drawer */}
       {mobileOpen && (
         <div className="lg:hidden fixed inset-0 z-40 bg-white flex flex-col" style={{ top: 72 }}>
           <nav className="flex flex-col border-t-4 border-black">
-            {navLinks.map((link, i) => (
-              <a
+            {navLinks.map((link) => (
+              <Link
                 key={link.name}
                 href={link.href}
                 onClick={() => setMobileOpen(false)}
@@ -114,23 +106,22 @@ const Navbar = () => {
               >
                 <span>{link.name}</span>
                 <span className="text-lg">↗</span>
-              </a>
+              </Link>
             ))}
           </nav>
           <div className="p-6">
-            <a
+            <Link
               href="/tickets#tickets"
               onClick={() => setMobileOpen(false)}
               className="w-full flex items-center justify-between px-6 py-4 font-mono text-[14px] font-black uppercase tracking-widest text-black bg-primary border-4 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] transition-all"
             >
               <span>Get Your Ticket</span>
               <Ticket className="w-5 h-5 stroke-[3]" />
-            </a>
+            </Link>
           </div>
         </div>
       )}
 
-      {/* Spacer */}
       <div className="h-[72px]"></div>
     </div>
   );

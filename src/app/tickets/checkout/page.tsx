@@ -219,7 +219,7 @@ function CheckoutContent() {
               </div>
 
               <p className="font-bold text-[15px] uppercase leading-snug text-black/70">
-                You'll be taken to <span className="text-black">1e9.community</span> to securely complete your
+                  You&apos;ll be taken to <span className="text-black">1e9.community</span> to securely complete your
                 purchase. Your ticket will be emailed to{" "}
                 <span className="text-black">{form.email}</span> once payment is confirmed.
               </p>
