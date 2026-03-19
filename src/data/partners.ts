@@ -75,7 +75,7 @@ export const partners: Partner[] = [
   },
   {
     name: 'BFC',
-    logo: 'https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/68ea0bb2-589b-4a71-9c75-5bebfc51b135/image-1772717999564.png',
+    logo: '/bfc-logo.png',
     url: 'https://www.bfc.vc/',
   },
   {
