@@ -101,6 +101,7 @@ const TracksSection = () => {
             {tracks.map((track, i) => (
               <button
                 key={i}
+                onMouseEnter={() => setActive(i)}
                 onClick={() => setActive(i)}
                 className={`
                   group w-full text-left flex items-center justify-between px-8 py-5 border-b-4 border-black transition-all duration-150
