@@ -101,6 +101,6 @@ export const partners: Partner[] = [
   {
     name: 'European DAO Workshop',
     logo: '/european-dao-workshop-logo.png',
-    url: 'https://dawo25.org/',
+    url: 'https://dawo26.org/',
   },
 ];
