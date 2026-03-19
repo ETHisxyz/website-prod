@@ -95,7 +95,7 @@ const TracksSection = () => {
         </div>
 
         {/* Main layout */}
-        <div className="grid grid-cols-1 md:grid-cols-12 min-h-[520px]">
+        <div className="grid grid-cols-1 md:grid-cols-12 md:h-[520px]">
           {/* Track list */}
           <div className="md:col-span-5 border-r-0 md:border-r-4 border-black flex flex-col">
             {tracks.map((track, i) => (
@@ -104,7 +104,7 @@ const TracksSection = () => {
                 onMouseEnter={() => setActive(i)}
                 onClick={() => setActive(i)}
                 className={`
-                  group w-full text-left flex items-center justify-between px-8 py-5 border-b-4 border-black transition-all duration-150
+                  group w-full text-left flex items-center justify-between px-8 py-5 border-b-4 border-black transition-all duration-150 flex-1
                   ${active === i ? 'bg-primary' : 'bg-white hover:bg-black hover:text-white'}
                 `}
               >
@@ -135,8 +135,8 @@ const TracksSection = () => {
           </div>
 
             {/* Detail panel */}
-            <div className={`md:col-span-7 flex flex-col ${activeTrack.color}`}>
-              <div className={`flex items-start justify-between px-10 pt-10 pb-6 border-b-4 ${activeTrack.color === 'bg-black' ? 'border-white' : 'border-black'} ${activeTrack.textColor}`}>
+            <div className={`md:col-span-7 flex flex-col h-full ${activeTrack.color}`}>
+              <div className={`flex items-start justify-between px-10 pt-10 pb-6 border-b-4 flex-shrink-0 ${activeTrack.color === 'bg-black' ? 'border-white' : 'border-black'} ${activeTrack.textColor}`}>
                 <div>
                   <p className="font-mono text-[11px] font-black tracking-widest opacity-50 uppercase mb-2">{activeTrack.tag}</p>
                   <h3 className="text-[38px] md:text-[52px] font-black uppercase leading-[0.9] tracking-tight">
@@ -148,7 +148,7 @@ const TracksSection = () => {
                 </span>
               </div>
 
-              <div className={`px-10 py-8 flex-grow ${activeTrack.textColor}`}>
+              <div className={`px-10 py-8 flex-grow overflow-hidden ${activeTrack.textColor}`}>
                 <p className={`text-[15px] md:text-[16px] font-bold leading-relaxed tracking-wide uppercase ${
                   activeTrack.textColor === 'text-white' ? 'text-white/80' : 'text-black/70'
                 }`}>
@@ -156,7 +156,7 @@ const TracksSection = () => {
                 </p>
               </div>
 
-              <div className={`flex items-center gap-0 border-t-4 ${activeTrack.color === 'bg-black' ? 'border-white' : 'border-black'} mt-auto`}>
+              <div className={`flex items-center gap-0 border-t-4 flex-shrink-0 ${activeTrack.color === 'bg-black' ? 'border-white' : 'border-black'} mt-auto`}>
                 <div className={`px-10 py-5 border-r-4 ${activeTrack.color === 'bg-black' ? 'border-white' : 'border-black'} ${activeTrack.textColor}`}>
                 <p className="text-[32px] font-black tracking-tight leading-none">{activeTrack.stat}</p>
                 <p className={`font-mono text-[10px] font-black tracking-widest uppercase mt-1 ${
