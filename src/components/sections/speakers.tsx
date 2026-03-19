@@ -8,8 +8,8 @@ import { speakers, type Speaker } from '@/data/speakers';
 
 function SpeakerCard({ speaker }: { speaker: Speaker }) {
   const inner = (
-    <div className="w-[160px] sm:w-[190px] flex-shrink-0 flex flex-col group border-4 border-black bg-white shadow-[4px_4px_0px_0px_#000] hover:shadow-[6px_6px_0px_0px_var(--primary)] transition-all">
-      <div className="relative w-full aspect-square overflow-hidden border-b-4 border-black bg-muted">
+    <div className="w-[160px] sm:w-[190px] flex-shrink-0 flex flex-col group border-4 border-black bg-white shadow-[4px_4px_0px_0px_#000] hover:shadow-[6px_6px_0px_0px_var(--primary)] transition-all h-full">
+      <div className="relative w-full aspect-square overflow-hidden border-b-4 border-black bg-muted flex-shrink-0">
         <Image
           src={speaker.image}
           alt={speaker.name}
@@ -18,7 +18,7 @@ function SpeakerCard({ speaker }: { speaker: Speaker }) {
           sizes="(max-width: 640px) 160px, 190px"
         />
       </div>
-      <div className="p-3 flex flex-col gap-1">
+      <div className="p-3 flex flex-col gap-1 flex-grow">
         <p className="font-black text-[12px] sm:text-[13px] leading-tight uppercase tracking-tight">{speaker.name}</p>
         <p className="font-mono text-[10px] font-bold text-black/50 uppercase leading-tight">{speaker.role}</p>
         <p className="font-mono text-[10px] font-bold text-black uppercase leading-tight">{speaker.company}</p>
@@ -27,9 +27,9 @@ function SpeakerCard({ speaker }: { speaker: Speaker }) {
   );
 
   return speaker.linkedin ? (
-    <a href={speaker.linkedin} target="_blank" rel="noopener noreferrer">{inner}</a>
+    <a href={speaker.linkedin} target="_blank" rel="noopener noreferrer" className="flex">{inner}</a>
   ) : (
-    <div>{inner}</div>
+    <div className="flex">{inner}</div>
   );
 }
 
@@ -64,7 +64,7 @@ const Speakers: React.FC = () => {
 
       {/* Row 1 — scrolls left */}
       <div className="overflow-x-hidden mb-4" style={{ WebkitMaskImage: 'linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%)' }}>
-        <div className="flex gap-3 w-max pl-4" style={{ willChange: 'transform', animation: 'marquee 30s linear infinite' }}>
+        <div className="flex items-stretch gap-3 w-max pl-4" style={{ willChange: 'transform', animation: 'marquee 30s linear infinite' }}>
           {[...row1, ...row1].map((speaker, i) => (
             <SpeakerCard key={i} speaker={speaker} />
           ))}
@@ -73,7 +73,7 @@ const Speakers: React.FC = () => {
 
       {/* Row 2 — scrolls right */}
       <div className="overflow-x-hidden pb-16" style={{ WebkitMaskImage: 'linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%)' }}>
-        <div className="flex gap-3 w-max pl-4" style={{ willChange: 'transform', animation: 'marquee 35s linear infinite reverse' }}>
+        <div className="flex items-stretch gap-3 w-max pl-4" style={{ willChange: 'transform', animation: 'marquee 35s linear infinite reverse' }}>
           {[...row2, ...row2].map((speaker, i) => (
             <SpeakerCard key={i} speaker={speaker} />
           ))}
