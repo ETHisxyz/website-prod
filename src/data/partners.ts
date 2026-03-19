@@ -98,4 +98,9 @@ export const partners: Partner[] = [
     logo: '/tum-blockchain-logo.png',
     url: 'https://www.tum-blockchain.com/',
   },
+  {
+    name: 'European DAO Workshop',
+    logo: '/european-dao-workshop-logo.png',
+    url: 'https://dawo25.org/',
+  },
 ];
