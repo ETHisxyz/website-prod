@@ -84,11 +84,6 @@ export const partners: Partner[] = [
     url: 'https://filedgr.com/',
   },
   {
-    name: 'DAWO',
-    logo: '/dawo-logo.png',
-    url: 'https://dawo26.org/',
-  },
-  {
     name: '5thWorld',
     logo: '/5thworld-logo.webp',
     url: 'https://5thworld.com/',
