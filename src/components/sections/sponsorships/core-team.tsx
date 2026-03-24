@@ -2,6 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
+import { Linkedin } from "lucide-react";
 
 const team = [
   {
@@ -72,7 +73,7 @@ export function CoreTeam() {
                     />
                   </div>
                   <div className="p-4 flex flex-col gap-2 flex-1">
-                    <p className="font-black uppercase text-[13px] leading-tight tracking-tight">
+                    <p className="font-black uppercase text-[11px] leading-tight tracking-tight">
                       {member.name}
                     </p>
                     {member.linkedin && (
@@ -80,8 +81,9 @@ export function CoreTeam() {
                         href={member.linkedin}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="font-mono text-[11px] uppercase tracking-widest text-black underline hover:text-[#ffde03] hover:bg-black px-1 transition-colors w-fit"
+                        className="flex items-center gap-1 font-mono text-[10px] uppercase tracking-widest text-black underline hover:text-[#ffde03] hover:bg-black px-1 transition-colors w-fit whitespace-nowrap"
                       >
+                        <Linkedin size={11} strokeWidth={2.5} />
                         LinkedIn
                       </a>
                     )}
