@@ -55,7 +55,7 @@ export function CoreTeam() {
             <h2 className="text-4xl md:text-7xl font-black uppercase tracking-tighter leading-none mb-12">
               COORDINATION TEAM
             </h2>
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-0 border-t-4 border-l-4 border-black">
+            <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-7 gap-0 border-t-4 border-l-4 border-black">
               {team.map((member) => (
                 <div
                   key={member.name}
