@@ -45,7 +45,7 @@ const team = [
 export function CoreTeam() {
   return (
     <section className="py-24 px-4 bg-white border-b-4 border-black">
-      <div className="max-w-[1280px] mx-auto">
+      <div className="max-w-[1400px] mx-auto">
         <div className="border-4 border-black neo-shadow">
           <div className="bg-black px-8 py-5 border-b-4 border-black">
             <span className="font-mono text-[13px] text-[#ffde03] font-black uppercase tracking-widest">
@@ -67,13 +67,13 @@ export function CoreTeam() {
                       src={member.image}
                       alt={member.name}
                       fill
-                      sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 20vw"
+                      sizes="(max-width: 640px) 50vw, (max-width: 1024px) 25vw, 14vw"
                       className="object-cover"
                       style={{ objectPosition: (member as { objectPosition?: string }).objectPosition ?? "center top" }}
                     />
                   </div>
-                  <div className="p-4 flex flex-col gap-2 flex-1">
-                    <p className="font-black uppercase text-[11px] leading-tight tracking-tight">
+                  <div className="p-2 flex flex-col gap-1 flex-1">
+                    <p className="font-black uppercase text-[10px] leading-tight tracking-tight">
                       {member.name}
                     </p>
                     {member.linkedin && (
@@ -81,9 +81,9 @@ export function CoreTeam() {
                         href={member.linkedin}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center gap-1 font-mono text-[10px] uppercase tracking-widest text-black underline hover:text-[#ffde03] hover:bg-black px-1 transition-colors w-fit whitespace-nowrap"
+                        className="flex items-center gap-1 font-mono text-[9px] uppercase tracking-wider text-black underline hover:text-[#ffde03] hover:bg-black px-1 transition-colors w-fit whitespace-nowrap"
                       >
-                        <Linkedin size={11} strokeWidth={2.5} />
+                        <Linkedin size={10} strokeWidth={2.5} />
                         LinkedIn
                       </a>
                     )}
